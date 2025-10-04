@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL to CSV Scraper</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 40px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #333;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input[type="url"] {
+        padding: 10px;
+        width: 400px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Scrape a Table from a Webpage</h1>
+      <p>
+        Enter the URL of a page with a table.
+      </p>
+
+      <form action="/" method="post">
+        <input
+          type="url"
+          name="url"
+          placeholder="https://en.wikipedia.org/wiki/..."
+          required
+        />
+        <br /><br />
+        <input type="submit" value="Scrape and Download CSV" />
+      </form>
+    </div>
+  </body>
+</html>
